@@ -190,10 +190,7 @@ const Dashboard = ({ cardTitle }) => {
         api.get('deworming/get_total_gender'),
       ]).then((responses) => {
         const response = responses.map((response) => response.data)
-        console.info({
-          deworming: response[0],
-          dewormingGender: response[1],
-        })
+
         return {
           deworming: response[0],
           dewormingGender: response[1],
