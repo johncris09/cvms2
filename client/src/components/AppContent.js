@@ -11,14 +11,13 @@ const AppContent = () => {
   if (isTokenExist) {
     user = jwtDecode(localStorage.getItem('cvmsToken'))
   }
-  console.info(user)
   return (
     <CContainer lg>
       <Suspense fallback={<CSpinner color="primary" />}>
         <Routes>
           {routes.map((route, idx) => {
             const isRoleInRoutes = route.user.some((r) => r.includes(user.role_type))
-            console.info(isRoleInRoutes)
+
             if (isRoleInRoutes) {
               if (route.element) {
                 return (
