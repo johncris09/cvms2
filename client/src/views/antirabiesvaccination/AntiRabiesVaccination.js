@@ -629,16 +629,18 @@ const AntiRabiesVaccination = () => {
                       setIsEnableEdit(true)
                       form.setValues({
                         id: row.original.id,
-                        farmer_name: row.original.farmer_name,
+                        date_vaccinated: row.original.date_vaccinated,
+                        vaccine_type: row.original.vaccine_type,
+                        owner_name: row.original.owner_name,
+                        pet_name: row.original.pet_name,
                         address: row.original.address_id,
-                        date_deworming: row.original.date_deworming,
+                        pet_birthdate: row.original.pet_birthdate,
+                        sex: row.original.sex,
+                        color: row.original.color,
                         species: row.original.species_id,
-                        head_number: row.original.head_number,
-                        female: row.original.female,
-                        male: row.original.male,
-                        treatment: row.original.treatment_id,
-                        amount: row.original.amount,
+                        neutered: row.original.neutered,
                       })
+                      console.info(row.original)
                       setModalVisible(true)
                     }}
                   >
