@@ -13,6 +13,7 @@ class AntiRabiesVaccinationModel extends CI_Model
         $query = $this->db
             ->select('
             a.id,
+            b.id address_id,
             b.barangay address,
             a.color,
             a.date_vaccinated,
@@ -20,6 +21,7 @@ class AntiRabiesVaccinationModel extends CI_Model
             a.neutered,
             a.owner_name,
             date(a.pet_birthdate) pet_birthdate,
+            s.id species_id,
             s.name species,
             a.sex,
             a.vaccine_type')
