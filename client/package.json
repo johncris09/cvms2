@@ -1,7 +1,7 @@
 {
-  "name": "scholarship",
+  "name": "cvms",
   "version": "4.5.0",
-  "description": "Oroquieta City Scholarship",
+  "description": "Office of the City Veterinarian Monitoring System",
   "homepage": ".",
   "author": "John Cris Manabo",
   "scripts": {

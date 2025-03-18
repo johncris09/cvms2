@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
+const PetOwner = React.lazy(() => import('./views/pet_registration/PetOwner'))
+const PetRegistration = React.lazy(() => import('./views/pet_registration/PetRegistration'))
 const User = React.lazy(() => import('./views/user/User'))
 const Deworming = React.lazy(() => import('./views/deworming/Deworming'))
 const AntiRabiesSpecies = React.lazy(() => import('./views/species/AntiRabiesSpecies'))
@@ -19,6 +21,19 @@ const routes = [
     element: Dashboard,
   },
 
+  {
+    path: '/pet_owner',
+    user: ['Super Admin'],
+    name: 'Pet Owner',
+    element: PetOwner,
+  },
+
+  {
+    path: '/pet_registration',
+    user: ['Super Admin'],
+    name: 'Pet Registration',
+    element: PetRegistration,
+  },
   {
     path: '/manage_dog',
     user: ['Super Admin'],

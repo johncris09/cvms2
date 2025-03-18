@@ -14,7 +14,7 @@ const Page404 = () => {
           <CCol>
             <div className="clearfix">
               <div className="text-center">
-                <h1>Oroquieta City Scholarship</h1>
+                <h1>Office of the City Veterinarian Monitoring System</h1>
               </div>
               <div className="text-center">
                 <span className="my-5" style={{ fontSize: 150 }}>

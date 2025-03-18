@@ -8,6 +8,7 @@ import {
   cilCog,
   cilDog,
   cilEyedropper,
+  cilFile,
   cilHome,
   cilLibraryBuilding,
   cilListRich,
@@ -31,7 +32,24 @@ const _nav = (userInfo) => {
         to: '/dashboard',
         icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
       },
-
+      {
+        component: CNavGroup,
+        name: 'Pet Registration',
+        to: '/pet_registration',
+        icon: <CIcon icon={cilFile} customClassName="nav-icon" />,
+        items: [
+          {
+            component: CNavItem,
+            name: 'Pet Registration',
+            to: '/pet_registration',
+          },
+          {
+            component: CNavItem,
+            name: 'Pet Owner',
+            to: '/pet_owner',
+          },
+        ],
+      },
       {
         component: CNavGroup,
         name: 'Manage Dog',
